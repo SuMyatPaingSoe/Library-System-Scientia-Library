@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* homepage */
+/* header */
+.nav-link, .search-btn, .social-media-link{
+    transition: .25s ease-in;
+}
+
+.nav-link:hover, .book-link:hover, .social-media-link:hover {
+    color: #9d7628 !important;
+    cursor: pointer;
+}
+
+/* home */
+.home {
+    color: white;
+    overflow: hidden;
+}
+
+.banner {
+    background:linear-gradient(rgb(0,0,0,0.8), rgb(0,0,0,0.5)), url("../images/library-background-wallpaper.jpg");
+    color: #dedede;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* search */
+.advanced-search {
+    margin-left: 25%;
+}
+
+.search-btn:hover {
+    background-color: #9d7628;
+    color: #fff;
+}
+
+/* new arrival */
+.new-arrival .card,
+.catalog .card,
+.news .card {
+    overflow: hidden;
+    border-style: none;
+    box-shadow: 0px 0px 1px grey;
+    transition: .25s ease-in;
+}
+
+.new-arrival .card:hover,
+.catalog .card:hover,
+.news .card:hover {
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+/* footer */
+.footer {
+    background-color: #f0ede9;
+}
+
+/* login */
+.login-btn {
+    background-color: #9d7628;
+    transition: .25s ease-in;
+}
+
+.login-btn:hover {
+    background-color: #664d1c;
+}
+
+/* check-in */
+.add-btn {
+    background-color: #9d7628;
+    color: white;
+    transition: .25s ease-in;
+}
+
+.add-btn:hover {
+    background-color: #664d1c;
+}
+
+/* admin */
+.admin-nav {
+    width: 250px;
+    z-index: 20;
+    margin-left: -300px;
+    transition: 0.4s;
+}
+
+/* admin navbar sidebar */
+.my-container {
+    transition: 0.4s;
+}
+
+.normal-nav {
+    z-index: 10;
+}
+
+.active-nav {
+    margin-left: 0;
+}
+
+.active-cont {
+    margin-left: 250px;
+}
+
+/* selectpicker dropdown styling */
+.inner .selected {
+    background-color: #9d7628;
+}
+
+/* Datatable pagination color change */
+.pagination .page-item.active .page-link { background-color: #9d7628;  border: 0;}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item.active .page-link:focus {
+background-color: #9d7628;
+}
+
+.pagination .page-item.active .page-link:hover {
+background-color: #9d7628;
+}
+
+@media only screen and (max-width: 992px) {
+    .new-arrival .card img {
+        height: 65vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .new-arrival .card {
+        width: 60%;
+    }
+
+
+    .new-arrival .card img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .advanced-search {
+        margin-left: 0;
+    }
+
+    .search-group {
+        flex: 1;
+    }
+
+}
